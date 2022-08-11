@@ -3,7 +3,8 @@ import {
     createUserWithEmailAndPassword, 
     signInWithEmailAndPassword, 
     signOut,
-    onAuthStateChanged
+    onAuthStateChanged,
+    sendPasswordResetEmail,
  } from "firebase/auth";
  import { auth } from "../firebase-config";
 
@@ -24,16 +25,8 @@ import {
         return signOut(auth)
     }
 
-    const resetPassword = (email) => {
-      return auth.sendPasswordResetEmail(email)
-    }
-  
-    const updateEmail = (email) => {
-      return user.updateEmail(email)
-    }
-  
-    const updatePassword = (password) => {
-      return user.updatePassword(password)
+    const forgotPassword = (email) => {
+      return sendPasswordResetEmail(auth, email).then((a) => {})
     }
   
     useEffect(() => {
@@ -48,7 +41,7 @@ import {
     }, []);
   
     return (
-      <UserContext.Provider value={{ createUser, user, logout, signIn }}>
+      <UserContext.Provider value={{ createUser, user, logout, signIn, forgotPassword }}>
         {children}
       </UserContext.Provider>
     );

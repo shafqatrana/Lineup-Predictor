@@ -48,16 +48,16 @@ const Signin = () => {
           Sign In
         </button>
       </form>
-      <div className='sigin_redirects'>
+      <div className='signin_redirects'>
         <p className="signin_redirectTitle">Don't have an account? 
             <Link to='/signup' className="signin_redirectSignup">
               Sign Up
-             </Link>
+            </Link>
         </p>
         <p className="signin_redirectTitle">Forgot your password? 
             <Link to='/forgotpassword' className="signin_redirectForgot">
               Click Here
-             </Link>
+            </Link>
         </p>
       </div>
     </div> 
