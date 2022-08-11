@@ -49,24 +49,24 @@ const Signup = () => {
         </div>
 
         {/* GO BACK AND ADD THIS LATER */}
-        {/* <div className="signup_passwordConfirm">
+        <div className="signup_passwordConfirm">
           <label className="signup_passwordTitle">Confirm Password</label>
           <input 
           onChange={(e) => setPassword(e.target.value)} 
           className="signup_input" 
           type="password" 
           />
-        </div> */}
+        </div>
 
-          <button className="signup_button">
-            Sign Up
-          </button>
-        </form>
+        <button className="signup_button">
+          Sign Up
+        </button>
+      </form>
         <div className="signup_redirects">
           <p className="signup_redirectTitle">Already have an account? 
              <Link to='/' className="signup_redirectSignin">
                Sign In
-              </Link>
+             </Link>
           </p>
         </div>
     </div> 
