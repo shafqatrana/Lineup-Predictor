@@ -6,22 +6,26 @@ import '../styling/Signup.css'
 const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [passwordConfirm, setPasswordConfirm] = useState('');
   const [error, setError] = useState('')
   const { createUser } = UserAuth();
   const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //if (.current.value !== passwordConfirmRef.current.value) {
-      //return setError("Passwords do not match")
-    //}
-    try {
-      setError('');
-      await createUser(email, password);
-      navigate('/account')
-    } catch (e) {
-      setError(e.message);
-      console.log(e.message);
+    if (password !== passwordConfirm) {
+      //Probably change this to a toast in the future
+      alert('Passwords do not match')
+    } else {
+      try {
+        setError('');
+        await createUser(email, password);
+        createUser()
+        navigate('/account')
+      } catch (e) {
+        setError(e.message);
+        console.log(e.message);
+      }
     }
   };
 
@@ -48,11 +52,10 @@ const Signup = () => {
           />
         </div>
 
-        {/* GO BACK AND ADD THIS LATER */}
         <div className="signup_passwordConfirm">
           <label className="signup_passwordTitle">Confirm Password</label>
           <input 
-          onChange={(e) => setPassword(e.target.value)} 
+          onChange={(e) => setPasswordConfirm(e.target.value)} 
           className="signup_input" 
           type="password" 
           />
