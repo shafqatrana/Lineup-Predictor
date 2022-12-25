@@ -26,28 +26,28 @@ const ForgotPassword = () => {
     };
 
     return (
-        <div className='forgotPassword'>
-            <div className='fogotPassword_header'>
-                <h1 className="forgotPassword_title">Reset your password</h1>
+        <div className='forgot-password'>
+            <div className='fogot-password-header'>
+                <h1 className="forgot-password-title">Reset your password</h1>
             </div>
 
-            <form onSubmit={handleSubmit} className="forgotPassword_form">
-                <div className="forgotPassword_email">
-                    <label className="forgotPassword_emailTitle">Email Address</label>
+            <form onSubmit={handleSubmit} className="forgot-password-form">
+                <div className="forgot-password-email">
+                    <label className="forgot-password-email-title">Email Address</label>
                     <input
                      onChange={(e) => setEmail(e.target.value)}
-                     className="forgotPassword_input" 
+                     className="forgot-password-input" 
                      type="email" 
                     />
                 </div>
-                <button className="forgotPassword_button">
+                <button className="forgot-password-button">
                     Submit
                 </button>
             </form>
             
-            <div className='forgotPassword_redirects'>
-                <p className="forgotPassword_redirectTitle">Don't have an account? 
-                <Link to='/signup' className="forgotPassword_redirectSignup">
+            <div className='forgot-password-redirects'>
+                <p className="forgot-password-redirect-title">Don't have an account? 
+                <Link to='/signup' className="forgot-password-redirect-signup">
                     Sign Up
                 </Link>
                 </p>

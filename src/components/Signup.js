@@ -31,43 +31,43 @@ const Signup = () => {
 
   return (
     <div className="signup">
-      <div className="signup_header">
-        <h1 className="signup_title">Signup for an account</h1>
+      <div className="signup-header">
+        <h1 className="signup-title">Signup for an account</h1>
       </div>
-      <form onSubmit={handleSubmit} className="signup_form">
-        <div className="signup_email">
-          <label className="signup_emailTitle">Email Address</label>
+      <form onSubmit={handleSubmit} className="signup-form">
+        <div className="signup-email">
+          <label className="signup-email-title">Email Address</label>
           <input 
           onChange={(e) => setEmail(e.target.value)} 
-          className="signup_input" 
+          className="signup-input" 
           type="email" 
           />
         </div>
-        <div className="signup_password">
-          <label className="signup_passwordTitle">Password</label>
+        <div className="signup-password">
+          <label className="signup-password-title">Password</label>
           <input 
           onChange={(e) => setPassword(e.target.value)} 
-          className="signup_input" 
+          className="signup-input" 
           type="password" 
           />
         </div>
 
-        <div className="signup_passwordConfirm">
-          <label className="signup_passwordTitle">Confirm Password</label>
+        <div className="signup-password-confirm">
+          <label className="signup-password-title">Confirm Password</label>
           <input 
           onChange={(e) => setPasswordConfirm(e.target.value)} 
-          className="signup_input" 
+          className="signup-input" 
           type="password" 
           />
         </div>
 
-        <button className="signup_button">
+        <button className="signup-button">
           Sign Up
         </button>
       </form>
-        <div className="signup_redirects">
-          <p className="signup_redirectTitle">Already have an account? 
-             <Link to='/' className="signup_redirectSignin">
+        <div className="signup-redirects">
+          <p className="signup-redirect-title">Already have an account? 
+             <Link to='/' className="signup-redirect-signin">
                Sign In
              </Link>
           </p>
