@@ -1,0 +1,19 @@
+.navigation-bar {
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+    background-color: lightsteelblue;
+}
+
+.navigation-bar .nav-option {
+    padding-left: 10px;
+}
+
+.navigation-bar .nav-option a{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation-bar .nav-option a:hover{
+    color: black;
+}
