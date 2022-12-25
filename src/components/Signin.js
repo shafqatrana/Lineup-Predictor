@@ -24,38 +24,38 @@ const Signin = () => {
  
   return (
     <div className='signin'>
-      <div className='signin_header'>
-        <h1 className="signin_title">Sign in to your account</h1>
+      <div className='signin-header'>
+        <h1 className="signin-title">Sign in to your account</h1>
       </div>
-      <form onSubmit={handleSubmit} className="signin_form">
-        <div className="signin_email">
-          <label className="signin_emailTitle">Email Address</label>
+      <form onSubmit={handleSubmit} className="signin-form">
+        <div className="signin-email">
+          <label className="signin-emailTitle">Email Address</label>
           <input
            onChange={(e) => setEmail(e.target.value)}
-           className="signin_input" 
+           className="signin-input" 
            type="email" 
           />
         </div>
-        <div className="signin_password">
-          <label className="signin_passwordTitle">Password</label>
+        <div className="signin-password">
+          <label className="signin-password-title">Password</label>
           <input 
           onChange={(e) => setPassword(e.target.value)}
-          className="signin_input" 
+          className="signin-input" 
           type="password" 
           />
         </div>
-        <button className="signin_button">
+        <button className="signin-button">
           Sign In
         </button>
       </form>
-      <div className='signin_redirects'>
-        <p className="signin_redirectTitle">Don't have an account? 
-            <Link to='/signup' className="signin_redirectSignup">
+      <div className='signin-redirects'>
+        <p className="signin-redirect-title">Don't have an account? 
+            <Link to='/signup' className="signin-redirect-signup">
               Sign Up
             </Link>
         </p>
-        <p className="signin_redirectTitle">Forgot your password? 
-            <Link to='/forgotpassword' className="signin_redirectForgot">
+        <p className="signin-redirect-title">Forgot your password? 
+            <Link to='/forgotpassword' className="signin-redirect-forgot">
               Click Here
             </Link>
         </p>

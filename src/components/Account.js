@@ -19,10 +19,10 @@ const Account = () => {
 
   return (
     <div className="account">
-      <h1 className="account_Title">Account</h1>
+      <h1 className="account-title">Account</h1>
       <p>User Email: {user && user.email}</p>
 
-      <button onClick={handleLogout} className="logout_button">Logout</button>
+      <button onClick={handleLogout} className="logout-button">Logout</button>
     </div>
   )
 }
