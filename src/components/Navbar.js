@@ -9,7 +9,7 @@ export default function Navbar() {
             <div className="nav-option"> <Link to="/home" className="site-title"> Home </Link> </div>
             <div className="nav-option"> <CustomLink to="/account">Account</CustomLink> </div>
             <div className="nav-option"> <CustomLink to="/leaderboard">Leaderboard</CustomLink> </div>
-            <div className="nav-option"> <CustomLink to="/account">Pick Lineup</CustomLink> </div>
+            <div className="nav-option"> <CustomLink to="/picklineup">Pick Lineup</CustomLink> </div>
             <div className="nav-option"> <CustomLink to="/account">Manage League</CustomLink> </div>
         </nav>
       </div>
