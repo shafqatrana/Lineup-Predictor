@@ -6,9 +6,11 @@ export default function Navbar() {
     <div>
       <div className="navigation-bar">
         <nav className="nav">
-            <div className="nav-option"> <Link to="/home" className="site-title"> Site Name </Link> </div>
+            <div className="nav-option"> <Link to="/home" className="site-title"> Home </Link> </div>
             <div className="nav-option"> <CustomLink to="/account">Account</CustomLink> </div>
-            <div className="nav-option"> <CustomLink to="/account">Leaderboard</CustomLink> </div>
+            <div className="nav-option"> <CustomLink to="/leaderboard">Leaderboard</CustomLink> </div>
+            <div className="nav-option"> <CustomLink to="/account">Pick Lineup</CustomLink> </div>
+            <div className="nav-option"> <CustomLink to="/account">Manage League</CustomLink> </div>
         </nav>
       </div>
        <Outlet>
