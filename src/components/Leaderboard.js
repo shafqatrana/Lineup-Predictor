@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../contexts/AuthContext';
 
-const Home = () => {
+const Leaderboard = () => {
 
   return (
-    <div className="home">
-      TEST
+    <div className="leaderboard">
+      Leaderboard
     </div>
   )
 }
 
-export default Home
+export default Leaderboard
