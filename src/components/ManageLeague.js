@@ -4,11 +4,20 @@ import { UserAuth } from '../contexts/AuthContext';
 
 const ManageLeague = () => {
 
-  return (
-    <div className="manage-league">
-      Manage League
-    </div>
-  )
+  if (0 != 0) {
+    return (
+      <div className="manage-league">
+        Manage League
+      </div>
+    )
+  } else {
+    return (
+      <div className="manage-league">
+        Select League
+      </div>
+    )
+  }
+
 }
 
 export default ManageLeague
